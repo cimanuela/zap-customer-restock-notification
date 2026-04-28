@@ -1,0 +1,41 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; }
+        .container { max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; }
+        .header { text-align: center; border-bottom: 3px solid #FF6B6B; padding-bottom: 20px; margin-bottom: 30px; }
+        .header h1 { color: #FF6B6B; margin: 0; font-size: 28px; }
+        .content { line-height: 1.6; color: #333; }
+        .highlight { background-color: #FFF8DC; padding: 15px; border-left: 4px solid #FF6B6B; margin: 20px 0; }
+        .cta-button { display: inline-block; background-color: #FF6B6B; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .footer { text-align: center; border-top: 1px solid #ddd; padding-top: 20px; margin-top: 30px; color: #999; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐱 It's Back!</h1>
+            <p>Happy Cat is restocked</p>
+        </div>
+        <div class="content">
+            <p>Hi {{first_name}},</p>
+            <p>Great news! <strong>Happy Cat Minkas - 10kg</strong> is back in stock.</p>
+            <p>We noticed you loved this product before, and we wanted to let you know it's available again.</p>
+            <div class="highlight">
+                <strong>⚠️ Limited Quantity Available</strong>
+                <p>Don't miss out! This popular item sells fast.</p>
+            </div>
+            <p>
+                <a href="{{product_url}}" class="cta-button">Shop Now</a>
+            </p>
+            <p>Best regards,<br/>
+            <strong>Happy4Pets Team</strong></p>
+        </div>
+        <div class="footer">
+            <p>You received this email because you previously purchased this item.</p>
+        </div>
+    </div>
+</body>
+</html>
